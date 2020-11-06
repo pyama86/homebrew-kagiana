@@ -2,16 +2,16 @@
 class Kagiana < Formula
   desc "Kagiana for Vault"
   homepage "https://github.com/pyama86/kagiana"
-  version "0.3.1"
+  version "0.3.2"
   bottle :unneeded
 
   if OS.mac?
-    url "https://github.com/pyama86/kagiana/releases/download/v0.3.1/kagiana_0.3.1_darwin_amd64.tar.gz"
-    sha256 "2a15f34d64411f70796e9f7b86b59e64a940e3fa535f262f25bee155d82fa8dc"
+    url "https://github.com/pyama86/kagiana/releases/download/v0.3.2/kagiana_0.3.2_darwin_amd64.tar.gz"
+    sha256 "ae6d623d532830cefa437f3e61167da1047033f535e83134bbda43beb8cda7bb"
   elsif OS.linux?
     if Hardware::CPU.intel?
-      url "https://github.com/pyama86/kagiana/releases/download/v0.3.1/kagiana_0.3.1_linux_amd64.tar.gz"
-      sha256 "c0a0b3dd844a583f3fb059dbc1dc06108693d1074ef735e7623d1cf7cd166c8d"
+      url "https://github.com/pyama86/kagiana/releases/download/v0.3.2/kagiana_0.3.2_linux_amd64.tar.gz"
+      sha256 "b058a12a85c6b4dcb79f6952a2a0c864787c43fa24d61d81fa4a9f416c77369f"
     end
   end
 
