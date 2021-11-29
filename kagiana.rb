@@ -3,7 +3,6 @@ class Kagiana < Formula
   desc "Kagiana for Vault"
   homepage "https://github.com/pyama86/kagiana"
   version "0.4.2"
-  bottle :unneeded
 
   if OS.mac?
     url "https://github.com/pyama86/kagiana/releases/download/v0.4.2/kagiana_0.4.2_darwin_amd64.tar.gz"
