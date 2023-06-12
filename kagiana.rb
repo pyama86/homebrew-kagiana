@@ -8,9 +8,17 @@ class Kagiana < Formula
   version "0.4.5"
 
   on_macos do
+    if Hardware::CPU.arm?
+      url "https://github.com/pyama86/kagiana/releases/download/v0.4.5/kagiana_0.4.5_darwin_arm64.tar.gz"
+      sha256 "98bb28dbdb2e7fb7f21472326331a93b6705fd70f90275a5e39b315b0e7f383f"
+
+      def install
+        bin.install 'kagiana'
+      end
+    end
     if Hardware::CPU.intel?
       url "https://github.com/pyama86/kagiana/releases/download/v0.4.5/kagiana_0.4.5_darwin_amd64.tar.gz"
-      sha256 "73ca54901999088fa3e6503c9e53bf475f195be78c29f2f410281bbdc75bed0e"
+      sha256 "81a647d1c519ec1505548c4d59a795187fdb70636768c03f211598686a01a681"
 
       def install
         bin.install 'kagiana'
@@ -21,7 +29,7 @@ class Kagiana < Formula
   on_linux do
     if Hardware::CPU.intel?
       url "https://github.com/pyama86/kagiana/releases/download/v0.4.5/kagiana_0.4.5_linux_amd64.tar.gz"
-      sha256 "ea78fbee3d9c58cdee4ab5c10e7f3d715eafff7c96e118d3d0f58b39801a896f"
+      sha256 "dcf4a8c6eece42c06bce87233b2882982f4ba5e29fc434417b9e31ffc8a761ac"
 
       def install
         bin.install 'kagiana'
